@@ -5,7 +5,7 @@ const LEVELS = {
 };
 
 const QUESTIONS_PER_LEVEL = 20;
-const TIME_LIMIT_SECONDS = 5;
+const TIME_LIMIT_SECONDS = 10;
 
 const levelScreen = document.getElementById("levelScreen");
 const quizScreen = document.getElementById("quizScreen");
