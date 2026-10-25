@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2563eb">
+  <title>ローマ字をおぼえよう！</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <button id="backButton" class="back-button hidden" type="button" aria-label="レベル選択に戻る">← 戻る</button>
+      <div class="brand">ローマ字をおぼえよう！</div>
+    </header>
+
+    <section id="levelScreen" class="screen">
+      <p class="lead">どのレベルにちょうせんする？</p>
+      <div class="level-buttons">
+        <button class="level-button level-one" data-level="seion" type="button">
+          <span class="level-number">LEVEL 1</span><span>清音</span>
+        </button>
+        <button class="level-button level-two" data-level="dakuon_handakuon" type="button">
+          <span class="level-number">LEVEL 2</span><span>濁音・半濁音</span>
+        </button>
+        <button class="level-button level-three" data-level="youon" type="button">
+          <span class="level-number">LEVEL 3</span><span>拗音</span>
+        </button>
+      </div>
+      <p id="loadMessage" class="message" role="status"></p>
+    </section>
+
+    <section id="quizScreen" class="screen hidden">
+      <div class="quiz-meta">
+        <span id="levelLabel"></span>
+        <span id="questionCount"></span>
+      </div>
+      <p id="instruction" class="instruction">この文字の子音はどれかな？</p>
+      <div id="kanaCard" class="kana-card" aria-live="polite">か</div>
+      <div id="options" class="options"></div>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      <p id="explanation" class="explanation"></p>
+      <button id="nextButton" class="primary-button hidden" type="button">次の問題へ →</button>
+      <button id="retryButton" class="secondary-button hidden" type="button">もう一度</button>
+    </section>
+
+    <footer>あせらず、ひとつずつ おぼえよう！</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
