@@ -130,7 +130,7 @@ function renderPhase() {
     const button = document.createElement("button");
     button.type = "button";
     button.className = "option-button";
-    button.textContent = choice.toUpperCase();
+    button.textContent = choice;
     button.addEventListener("click", () => chooseAnswer(choice, button));
     optionsBox.appendChild(button);
   });
