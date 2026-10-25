@@ -37,7 +37,11 @@ button { font: inherit; -webkit-tap-highlight-color: transparent; }
 .level-two { background: linear-gradient(135deg, #059669, #34d399); }
 .level-three { background: linear-gradient(135deg, #9333ea, #c084fc); }
 .message { min-height: 1.5em; color: #b91c1c; text-align: center; }
-.quiz-meta { display: flex; justify-content: space-between; gap: 12px; color: #52627a; font-size: .9rem; font-weight: 700; }
+.quiz-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; color: #52627a; font-size: .9rem; font-weight: 700; }
+.timer-display { color: #1d4ed8; font-variant-numeric: tabular-nums; font-weight: 850; }
+.timer-display.timer-expired { color: #b91c1c; }
+.score-line { margin-top: 8px; text-align: right; color: #52627a; font-size: .95rem; }
+.score-line strong { color: #1d4ed8; font-size: 1.2rem; }
 .instruction { text-align: center; font-size: 1.08rem; font-weight: 750; margin: 28px 0 14px; }
 .kana-card {
   display: grid; place-items: center; min-height: 170px; border-radius: 28px;
